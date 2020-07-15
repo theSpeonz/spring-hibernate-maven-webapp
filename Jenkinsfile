@@ -7,10 +7,10 @@ git'https://github.com/hema1795/spring-hibernate-maven-webapp'
          
         }
         stage('Test') {
-           bat 'mvn Test'
+           
         }
         stage('Deploy') {
-          bat 'mvn Deploy'
+          
         }
   
 stage('clean')
