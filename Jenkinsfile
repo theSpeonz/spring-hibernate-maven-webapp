@@ -7,10 +7,7 @@ git'https://github.com/hema1795/spring-hibernate-maven-webapp'
          
         }
         stage('test') {
-                steps {
-               def mvnHome = tool name: 'maven3', type: 'maven'
-  bat " ${mvnHome}/bin/mvn test "
-                }
+          
         }
         stage('Deploy') {
           
