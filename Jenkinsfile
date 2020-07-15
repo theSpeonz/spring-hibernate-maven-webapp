@@ -5,7 +5,8 @@ git 'https://github.com/theSpeonz/spring-hibernate-maven-webapp'
 }
 stage('clean')
 {
-  def mvnHome = tool name: 'maven', type: 'maven'
+  def mvn_version = 'M3'
+  def mvnHome = tool name: 'maven3', type: 'maven'
   bat " ${mvnHome}/bin/mvn clean "
 }
 }
