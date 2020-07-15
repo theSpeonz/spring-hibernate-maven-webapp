@@ -6,17 +6,10 @@ git'https://github.com/hema1795/spring-hibernate-maven-webapp'
         stage('Build') {
          
         }
-        stage('Test') {
+        stage('test') {
                 steps {
                bat 'mvn test'
-            }
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml'
                 }
-            }
-                
-           
         }
         stage('Deploy') {
           
