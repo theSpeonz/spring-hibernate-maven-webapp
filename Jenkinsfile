@@ -1,4 +1,4 @@
-pipeline {
+node {
         agent any tools{
                 tool name: 'maven3', type: 'maven'
         }
