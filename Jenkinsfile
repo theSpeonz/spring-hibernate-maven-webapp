@@ -17,6 +17,7 @@ git'https://github.com/hema1795/spring-hibernate-maven-webapp'
             steps {
                 echo 'Deploying....'
             }
+        }
   
 stage('clean')
 {
