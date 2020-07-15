@@ -6,8 +6,9 @@ git'https://github.com/hema1795/spring-hibernate-maven-webapp'
         stage('Build') {
          
         }
-        stage('Test') {steps {
-                sh 'mvn test'
+        stage('Test') {
+                steps {
+               bat 'mvn test'
             }
             post {
                 always {
