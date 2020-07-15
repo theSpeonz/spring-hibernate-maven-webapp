@@ -4,19 +4,13 @@ stage('SCM checkout')
 git'https://github.com/hema1795/spring-hibernate-maven-webapp'
 }
         stage('Build') {
-            steps {
-                echo 'Building..'
-            }
+         
         }
         stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
+           bat 'mvn Test'
         }
         stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
+          bat 'mvn Deploy'
         }
   
 stage('clean')
